@@ -1,0 +1,9 @@
+[submodule "clonix-software"]
+	path = clonix-software
+	url = git@github.com:Animus-Surge/clonix-software.git
+[submodule "clonix-dash"]
+	path = clonix-dash
+	url = git@github.com:Animus-Surge/clonix-dash.git
+[submodule "clonix-api"]
+	path = clonix-api
+	url = git@github.com:Animus-Surge/clonix-api.git
