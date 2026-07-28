@@ -1,0 +1,8 @@
+*.drawio.*
+
+*.env
+*.log
+
+*.tar*
+*.rar
+*.zip
