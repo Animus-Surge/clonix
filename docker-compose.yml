@@ -2,10 +2,18 @@
 
 services:
   clonix-dbtest:
-    image: container-registry.oracle.com/mysql/community-server:latest
-    ports:
-      - "3301:3306"
+    image: postgres:17-alpine
     environment:
-      MYSQL_ROOT_PASSWORD: "supersecurepassword123"
-      MYSQL_ROOT_HOST: "%"
+      POSTGRES_USER: psqluser
+      POSTGRES_PASSWORD: supersecurepassword123!
+      POSTGRES_DB: clonix
 
+    ports:
+      - "5432:5432"
+
+
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
